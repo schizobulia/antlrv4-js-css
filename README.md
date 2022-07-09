@@ -28,9 +28,9 @@ antlrv4_js_css.transform('.b { color: red; }', new Visitor())
 
 ### 其他模块的支持
 
-- [x] es
-- [x] esm
-- [x] umd
+- [v] es
+- [v] esm
+- [v] umd
 
 ### API
 ```javascript
