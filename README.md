@@ -2,6 +2,10 @@
 
 ## 使用antlrv4的js api 解析css
 
+### 下载
+```bash
+$ npm i antlrv4-js-css
+```
 ### 快速开始
 
 ```javascript
