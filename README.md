@@ -479,3 +479,39 @@ visitWs(ctx) {
     return this.visitChildren(ctx);
 }
 ```
+
+### 错误处理API
+```javascript
+const antlrv4_js_css = require('antlrv4-js-css')
+
+class Visitor extends antlrv4_js_css.Visitor {
+}
+
+class ErrorListener extends antlrv4_js_css.ErrorListener {
+  syntaxError(recognizer, offendingSymbol, line, column, msg, e) {
+
+  }
+}
+
+class ErrorHandler extends antlrv4_js_css.DefaultErrorStrategy {
+  reportError(recognizer, e) {
+
+  }
+  reportUnwantedToken(recognizer) {
+
+  }
+  reportMissingToken(recognizer) {
+
+  }
+}
+antlrv4_js_css.transform('.b { color: red;', new Visitor(), new ErrorListener(), new ErrorHandler())
+```
+
+### 其他库
+- [css3](https://github.com/schizobulia/antlrv4-js-css)
+- [xml](https://github.com/schizobulia/antlrv4-js-xml)
+- [html](https://github.com/schizobulia/antlrv4-js-html)
+
+
+### API参考
+- [antlr4](https://github.com/antlr/antlr4/blob/master/doc/index.md)
