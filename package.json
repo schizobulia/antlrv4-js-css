@@ -1,6 +1,6 @@
 {
   "name": "antlrv4-js-css",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Parsing css3 by antlr",
   "main": "index.js",
   "scripts": {
